@@ -8,14 +8,14 @@ class Ring {
 		x = xpos;
 		y = ypos;
 		on = true;
-		diameter = 1;
+		diameter = 20;
 		col = _col;
 	}
 
 	void grow() {
-		x+=4;
+		x+=2;
 		if (on == true) {
-			diameter += 0.5;
+			diameter += 1;
 			if (x-(.5*diameter) > width) {
 				on = false;
 			}
